@@ -20,7 +20,7 @@
 
 <section class="header">
 
-   <a href="index.html" class="logo">JS</a>
+    <a href="index.html" class="logo">JS</a>
 
    <nav class="navbar">
         <a href="index.html">home</a>
@@ -34,7 +34,7 @@
 
 <section class="services">
 
-   <h1 class="heading-title"> Funciones de texto </h1>
+   <h1 class="heading-title"> Palabra </h1>
 
 </section>
 
@@ -44,16 +44,37 @@
        <form action="#">
 
            <div class="box-input"> 
-               <input type="text" placeholder="Ingrese una palabra"></label>
+            
+               <input id="palabra" type="text" placeholder="Ingrese una palabra">
             </div>
 
-           <button>Longitud</button>
-           <button>Mayusculas</button>
-           <button>Minusculas</button>
-           <button>Primae caracter</button>
+
+            <select class="select" name="" id="opcion">
+
+               <option>Seleccione una operacion</option>
+               <option value="1">Longitud</option>
+               <option value="2">Mayuscula</option>
+               <option value="3">Minuscula</option>
+               <option value="4">Primer caracter</option>
+
+            </select>
+
+            <div id="res">
+
+
+            </div>
+ 
+
+         
+           <button id="btn">Calcular</button>
+
+          
+
        </form>
+
    </div>
 </div>
+
 
 
 
@@ -62,6 +83,7 @@
 
 
 <script src="js/script.js"></script>
+<script src="/js/palabra.js"></script>
 
 </body>
 </html>

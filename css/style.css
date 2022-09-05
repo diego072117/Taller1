@@ -260,6 +260,7 @@ section{
 }
 
 form button {
+   cursor: pointer;
    border: none;
    width: 80%;
    background: #263481;
