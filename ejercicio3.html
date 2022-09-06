@@ -1,73 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <link rel="icon" type="image/x-icon" href="images/logo-removebg-preview.png" />
+   <title>Triangulo</title>
 
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
- 
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   
+
    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
-<section class="header">
+   <section class="header">
 
-    <a href="index.html" class="logo">JS</a>
+      <a href="index.html" class="logo">JS</a>
 
-   <nav class="navbar">
-        <a href="index.html">home</a>
-        <a href="ejerciciosmodals.html">ejercicios modals</a>
-    </nav>
+      <nav class="navbar">
+         <a href="index.html">home</a>
 
-   <div id="menu-btn" class="fas fa-bars"></div>
+      </nav>
 
-</section>
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
 
 
-<section class="services">
+   <section class="services">
 
-   <h1 class="heading-title"> Ejercicio3 JS </h1>
+      <h1 class="heading-title"> Triangulo </h1>
 
-</section>
+   </section>
 
-<div class="container-ejercicios">
+   <div class="container-ejercicios">
 
-   <div class="form-data">
-       <form action="#">
+      <div class="form-data">
+         <form action="#">
 
-           <div class="box-input"> 
-               <input type="text" placeholder="Ingrese una palabra"></label>
+            <label for="">Base</label>
+            <div class="box-input">
+
+               <input id="base" type="number" placeholder="Digite la base"><br>
+
             </div>
 
-            <select class="select" name="" id="">
+            <label for="">Lado</label>
+            <div class="box-input">
 
-               <option value="">a</option>
-               <option value="">b</option>
-               <option value="">c</option>
+               <input id="lado-one" type="number" placeholder="Digite un lado"><br>
 
-            </select>
+            </div>
 
-           <button>Calcular</button>
-       </form>
+            <label for="">Lado</label>
+            <div class="box-input">
+
+               <input id="lado-two" type="number" placeholder="Digite el otro lado"><br>
+
+            </div>
+
+            <div id="res">
+
+
+            </div>
+
+
+            <button id="btn">Calcular</button>
+         </form>
+      </div>
    </div>
-</div>
 
 
 
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
-<script src="js/script.js"></script>
+   <script src="js/script.js"></script>
+   <script src="/js/triangulo.js"></script>
 
 </body>
+
 </html>

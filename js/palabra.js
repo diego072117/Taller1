@@ -15,25 +15,25 @@ if(opcion==1){
     res.style.setProperty('font-size', '15px');
 }
 if(opcion==2){
-    let longitud = palabra.toUpperCase()
+    let Mayus = palabra.toUpperCase()
 
-    let resultado = `<p>${longitud}</p>`
+    let resultado = `<p>${Mayus}</p>`
     res.innerHTML = resultado
     res.style.setProperty('font-size', '15px');
    
 }
 if(opcion==3){
-    let longitud = palabra.toLowerCase()
+    let min = palabra.toLowerCase()
 
-    let resultado = `<p>${longitud}</p>`
+    let resultado = `<p>${min}</p>`
     res.innerHTML = resultado
     res.style.setProperty('font-size', '15px');
     
 }
 if(opcion==4){
-    let longitud = palabra.charAt(0)
+    let caracter = palabra.charAt(0)
 
-    let resultado = `<p>La primera letra es: ${longitud}</p>`
+    let resultado = `<p>La primera letra es: ${caracter}</p>`
     res.innerHTML = resultado
     res.style.setProperty('font-size', '15px');
     
@@ -42,3 +42,4 @@ if(opcion==4){
 
 
 btn.addEventListener('click', calcular)
+

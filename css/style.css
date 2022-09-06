@@ -185,9 +185,10 @@ section{
 
 .container-ejercicios {
    position: relative;
+   margin-top: -40px;
    width: 25%;
-   height: 500px;
-   margin-left: 38%;
+   height: 550px;
+   margin-left: 37.5%;
    overflow: hidden;
    background-color: #E6E7E8;
    display: flex;
@@ -232,31 +233,10 @@ section{
    border-radius: 25px;
 }
 
-.box-input2 {
-   position: relative;
-   margin-top: -6em;
-   width: 80%;
-   display: flex;
-   justify-content: center;
-   overflow: hidden;
-}
 
-.box-input2 input {
-   width: 100%;
-   background-color: #c2c3c5;
-   outline: none;
-   border: none;
-   padding: 10px;
-   padding-left: 40px;
-   border-radius: 25px;
-}
 
-.box-input label {
-   position: absolute;
-   left: 8px;
-   padding: 5px;
-   top: 50%;
-   transform: translateY(-50%);
+.form-data label {
+   font-size: 15px;
 }
 
 form button {
@@ -284,6 +264,16 @@ form button {
    justify-content: center;
    overflow: hidden;
 }
+
+
+.box-input .terminos{
+   font-size: 50px;
+}
+
+
+
+
+
 
 
 /* media queries  */

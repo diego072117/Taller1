@@ -4,7 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" type="image/x-icon" href="images/logo-removebg-preview.png" />
+   <title>Instructores</title>
 
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -24,7 +26,7 @@
 
    <nav class="navbar">
         <a href="index.html">home</a>
-        <a href="ejerciciosmodals.html">ejercicios modals</a>
+   
     </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -34,7 +36,7 @@
 
 <section class="services">
 
-   <h1 class="heading-title"> Ejercicio4 JS </h1>
+   <h1 class="heading-title"> Instructores </h1>
 
 </section>
 
@@ -42,15 +44,53 @@
 
    <div class="form-data">
        <form action="#">
+         
+         <select class="select" name="" id="nombre">
 
-           <div class="box-input"> 
-               <input type="text" placeholder="Ingrese una palabra"></label>
-            </div>
+            <option selected>Seleccione Nombre</option>
+            <option value="1">Tatiana</option>
+            <option value="2">Adriana</option>
+            <option value="3">Yaneth</option>
+            <option value="4">Luis</option>
+            <option value="5">Cristian</option>
+            <option value="6">Carolina</option>
+            <option value="7">Fernando</option>
 
-           <button>Longitud</button>
-           <button>Mayusculas</button>
-           <button>Minusculas</button>
-           <button>Primae caracter</button>
+         </select>
+
+         <select class="select" name="" id="apellido">
+
+            <option selected>Seleccione Apeelido </option>
+            <option value="1">Cabrera</option>
+            <option value="2">Duarte</option>
+            <option value="3">Castañeda</option>
+            <option value="4">Baquero</option>
+            <option value="5">Buitrago</option>
+            <option value="6">Forero</option>
+            <option value="7">Galindo</option>
+
+         </select>
+
+         <select class="select" name="" id="materia">
+
+            <option selected>Seleccione Materia</option>
+            <option value="1">Javascript</option>
+            <option value="2">Diseño</option>
+            <option value="3">Gestion abiental</option>
+            <option value="4">Cultura fisica</option>
+            <option value="5">PHP</option>
+            <option value="6">Proyecto</option>
+            <option value="7">Base de datos</option>
+            <option value="8">Calidad de software</option>
+
+         </select>
+
+         <div id="res">
+
+
+         </div>
+
+         <button id="btn">Calcular</button>
        </form>
    </div>
 </div>
@@ -63,6 +103,7 @@
 
 
 <script src="js/script.js"></script>
+<script src="/js/instructores.js"></script>
 
 </body>
 </html>
