@@ -1,110 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" type="image/x-icon" href="images/logo-removebg-preview.png" />
    <title>Figuras</title>
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
- 
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   
+
    <link rel="stylesheet" href="css/style2.css">
 
 </head>
+
 <body>
 
-<section class="header">
+   <section class="header">
 
-    <a href="index.html" class="logo">JS</a>
+      <a href="index.html" class="logo">JS</a>
 
-   <nav class="navbar">
-        <a href="index.html">home</a>
-   
-    </nav>
+      <nav class="navbar">
+         <a href="index.html">home</a>
 
-   <div id="menu-btn" class="fas fa-bars"></div>
+      </nav>
 
-</section>
+      <div id="menu-btn" class="fas fa-bars"></div>
 
-
-<section class="packages">
-
-    <h1 class="heading-title">Figuras</h1>
- 
-    <div class="box-container">
- 
-       <div class="box">
-          <div class="image">
-             <img src="" alt="">
-          </div>
-          <div class="content">
-            <h3>...</h3>
-             <p>...</p>
-             <a href="#" class="btn">book now</a>
-          </div>
-       </div>
- 
-       <div class="box">
-          <div class="image">
-             <img src="" alt="">
-          </div>
-          <div class="content">
-            <h3>...</h3>
-             <p>...</p>
-             <a href="#" class="btn">book now</a>
-          </div>
-       </div>
- 
-       <div class="box">
-          <div class="image">
-             <img src="" alt="">
-          </div>
-          <div class="content">
-            <h3>...</h3>
-             <p>...</p>
-             <a href="#" class="btn">book now</a>
-          </div>
-       </div>
- 
-       <div class="box">
-          <div class="image">
-             <img src="" alt="">
-          </div>
-          <div class="content">
-             <h3>...</h3>
-             <p>...</p>
-             <a href="#" class="btn">book now</a>
-          </div>
-       </div>
- 
- 
-    </div>
- 
- </section>
- 
- 
- <section class="footer">
- 
-    <div class="box-container">
- 
-       <div class="credit"> Pagina <span>JS</span> | Ejercicios </div>
- 
- </section>
+   </section>
 
 
 
+   <div id="ventanaModal" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Perimetro del cuadrado</h2>
+         <label for="">Lado </label><br>
+         <input id="lado" type="number" placeholder="Digite el lado del cuadrado"><br>
+         <button class="btn" id="btn">Calcular</button>
+
+         <div id="res">
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+         </div>
 
 
-<script src="js/script.js"></script>
+      </div>
+
+   </div>
+
+   <div id="ventanaModal-area" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-area"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Area del cuadrado</h2>
+         <label for="">base </label><br>
+         <input id="cua-base" type="number" placeholder="Digite la base del cuadrado"><br>
+         <label for="">Altura </label><br>
+         <input id="cua-altura" type="number" placeholder="Digite la altura del cuadrado"><br>
+         <button class="btn" id="btn-area">Calcular</button>
+
+         <div id="res1">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+   <div id="ventanaModal-rec" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-rec"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Perimetro rectangulo</h2>
+         <label for="">Base </label><br>
+         <input id="rec-base" type="number" placeholder="Digite la base del rectangulo"><br>
+         <label for="">Altura </label><br>
+         <input id="rec-altura" type="number" placeholder="Digite la altura del rectangulo"><br>
+         <button class="btn" id="btn-rec">Calcular</button>
+
+         <div id="res2">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+   <div id="ventanaModal-rec-area" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-rec-area"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Area rectangulo</h2>
+         <label for="">Base </label><br>
+         <input id="rec-base-area" type="number" placeholder="Digite la base del rectangulo"><br>
+         <label for="">Altura </label><br>
+         <input id="rec-altura-area" type="number" placeholder="Digite la altura del rectangulo"><br>
+         <button class="btn" id="btn-rec-area">Calcular</button>
+
+         <div id="res3">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+   <section class="packages">
+
+      <h1 class="heading-title">Figuras</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="image">
+               <img src="/images/cuadrado.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Cuadrado</h3>
+               <p>Es una figura geométrica que pertenece a los paralelogramos porque tiene 4 lados. Los 4 lados miden lo
+                  mismo y son paralelos dos a dos.</p>
+               <button class="btn" id="abrirModal">Perimetro</button>
+               <button class="btn" id="abrirModal-area">Area</button>
+            </div>
+         </div>
+
+
+
+         <div class="box">
+            <div class="image">
+               <img src="/images/rectangulo.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Rectangulo</h3>
+               <p> es un cuadrilátero, específicamente un paralelogramo, que tiene dos pares de lados de igual longitud. A su vez, todos los ángulos interiores son rectos, es decir, miden 90º.</p>
+               <button class="btn" id="abrirModal-rec">Perimetro</button>
+               <button class="btn" id="abrirModal-rec-area">Area</button>
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+               <img src="" alt="">
+            </div>
+            <div class="content">
+               <h3>...</h3>
+               <p>...</p>
+               <button class="btn" id="abrirModal3">Lanzar Modal</button>
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+               <img src="" alt="">
+            </div>
+            <div class="content">
+               <h3>...</h3>
+               <p>...</p>
+               <button class="btn" id="abrirModal4">Lanzar Modal</button>
+            </div>
+         </div>
+
+
+      </div>
+
+   </section>
+
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="credit"> Pagina <span>JS</span> | Ejercicios </div>
+
+   </section>
+
+
+
+
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+   <script src="js/script.js"></script>
+   <script src="/js/modals.js"></script>
+   <script src="/js/areaPerimetro.js"></script>
 
 </body>
+
 </html>
