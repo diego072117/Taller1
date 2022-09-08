@@ -121,6 +121,96 @@
    </div>
 
 
+   <div id="ventanaModal-tri" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-tri"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Perimetro Triangulo</h2>
+         <label for="">Lado </label><br>
+         <input id="tri-lado1" type="number" placeholder="Digite el lado del triangulo"><br>
+         <label for="">Lado </label><br>
+         <input id="tri-lado2" type="number" placeholder="Digite el lado del triangulo"><br>
+         <label for="">Lado </label><br>
+         <input id="tri-lado3" type="number" placeholder="Digite el lado del triangulo"><br>
+         <button class="btn" id="btn-tri">Calcular</button>
+
+         <div id="res-tri">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+   <div id="ventanaModal-tri1" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-tri-area"><i class="fa-solid fa-xmark"></i></span>
+         <h2>area Triangulo</h2>
+         <label for="">Base </label><br>
+         <input id="base-tri" type="number" placeholder="Digite la base del triangulo"><br>
+         <label for="">Altura </label><br>
+         <input id="altura-tri" type="number" placeholder="Digite la altura del triangulo"><br>
+        
+         <button class="btn" id="btn-tri1">Calcular</button>
+
+         <div id="res-tri1">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+   <div id="ventanaModal-cir" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-cir"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Perimetro circulo</h2>
+         <label for="">Radio </label><br>
+         <input id="radio" type="number" placeholder="Digite el radio del circulo"><br>
+   
+         <button class="btn" id="btn-cir">Calcular</button>
+
+         <div id="res-cir">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+   <div id="ventanaModal-cir1" class="modal">
+      <div class="contenidoModal">
+
+         <span class="cerrarModal-cir1"><i class="fa-solid fa-xmark"></i></span>
+         <h2>Area circulo</h2>
+         <label for="">Radio </label><br>
+         <input id="radio-area" type="number" placeholder="Digite el radio del circulo"><br>
+   
+         <button class="btn" id="btn-cir-area">Calcular</button>
+
+         <div id="res-cir-area">
+
+
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+
+
    <section class="packages">
 
       <h1 class="heading-title">Figuras</h1>
@@ -134,7 +224,7 @@
             <div class="content">
                <h3>Cuadrado</h3>
                <p>Es una figura geométrica que pertenece a los paralelogramos porque tiene 4 lados. Los 4 lados miden lo
-                  mismo y son paralelos dos a dos.</p>
+                  mismo y son paralelos dos a dos.</p><br><br>
                <button class="btn" id="abrirModal">Perimetro</button>
                <button class="btn" id="abrirModal-area">Area</button>
             </div>
@@ -156,23 +246,25 @@
 
          <div class="box">
             <div class="image">
-               <img src="" alt="">
+               <img src="/images/triangulo.png" alt="" >
             </div>
             <div class="content">
-               <h3>...</h3>
-               <p>...</p>
-               <button class="btn" id="abrirModal3">Lanzar Modal</button>
+               <h3>Triangulo</h3>
+               <p>es un polígono conformado por tres lados, así como por tres vértices y tres ángulos interiores. El triángulo es una figura geométrica muy importante y base de otros polígonos.</p>
+               <button class="btn" id="abrirModal-tri">Perimetro</button>
+               <button class="btn" id="abrirModal-tri-area">Area</button>
             </div>
          </div>
 
          <div class="box">
             <div class="image">
-               <img src="" alt="">
+               <img src="/images/cir.png" alt="" >
             </div>
             <div class="content">
-               <h3>...</h3>
-               <p>...</p>
-               <button class="btn" id="abrirModal4">Lanzar Modal</button>
+               <h3>Circulo</h3>
+               <p>es una región del plano delimitada por una circunferencia y, por tanto, tiene asociada un área.​​A veces se utiliza indistintamente círculo por circunferencia siendo esta última su borde.</p>
+               <button class="btn" id="abrirModal-cir">Perimetro</button>
+               <button class="btn" id="abrirModal-cir-area">Area</button>
             </div>
          </div>
 

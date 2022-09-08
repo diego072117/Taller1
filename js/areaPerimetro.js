@@ -19,7 +19,7 @@ function perimetroCuadrado(){
 
 btn.addEventListener('click',perimetroCuadrado)
 
-
+//2
 
 let btnArea = document.getElementById('btn-area')
 
@@ -44,7 +44,7 @@ function areaCuadrado(){
 btnArea.addEventListener('click',areaCuadrado)
 
 
-/*----------------------------------RECTANgULO----------------------------------------*/
+/*----------------------------------RECTANGULO----------------------------------------*/
 
 let btnRec = document.getElementById('btn-rec')
 
@@ -68,7 +68,7 @@ function perimetroRectangulo(){
 
 btnRec.addEventListener('click',perimetroRectangulo)
 
-
+//2
 
 let btnRecArea = document.getElementById('btn-rec-area')
 
@@ -93,12 +93,105 @@ function areaRectangulo(){
 btnRecArea.addEventListener('click',areaRectangulo)
 
 
+/*------------------------------------TRIANGULO----------------------------------------*/
+
+
+let btntri = document.getElementById('btn-tri')
+
+
+function perimetroTriangulo(){
+
+    let res = document.getElementById("res-tri")
+    let lado1 = parseInt(document.getElementById('tri-lado1').value)
+    let lado2 = parseInt(document.getElementById('tri-lado2').value)
+    let lado3 = parseInt(document.getElementById('tri-lado3').value)
+
+    let resultado =  lado1+lado2+lado3
+
+
+    let inser = `<p>El perimetro del triangulo es ${resultado}</p>`
+    res.innerHTML = inser
+    res.style.setProperty('font-size', '15px');
+    
+
+
+}
+
+btntri.addEventListener('click',perimetroTriangulo)
+
+//2
+
+let btntri1 = document.getElementById('btn-tri1')
+
+
+function areaTriangulo(){
+
+    let res = document.getElementById("res-tri1")
+    let base = parseInt(document.getElementById('base-tri').value)
+    let altura = parseInt(document.getElementById('altura-tri').value)
+
+    let resultado =  (base*altura)/2
+
+
+    let inser = `<p>El area del triangulo es ${resultado}</p>`
+    res.innerHTML = inser
+    res.style.setProperty('font-size', '15px');
+    
+
+
+}
+
+btntri1.addEventListener('click',areaTriangulo)
 
 
 
+/*-------------------------------------CIRCULO--------------------------------*/
+
+let btncir = document.getElementById('btn-cir')
 
 
+function perimatroCirculo(){
 
+    let res = document.getElementById("res-cir")
+    let radio = parseInt(document.getElementById('radio').value)
+
+
+    let resultado =  radio*3.14
+
+
+    let inser = `<p>El perimetro del circulo es ${resultado}</p>`
+    res.innerHTML = inser
+    res.style.setProperty('font-size', '15px');
+    
+
+
+}
+
+btncir.addEventListener('click',perimatroCirculo)
+
+//2
+
+let btncirarea = document.getElementById('btn-cir-area')
+
+
+function areaCirculo(){
+
+    let res = document.getElementById("res-cir-area")
+    let radio = parseInt(document.getElementById('radio-area').value)
+
+
+    let resultado =  (radio*radio)*3.14
+
+
+    let inser = `<p>El area del circulo es ${resultado}</p>`
+    res.innerHTML = inser
+    res.style.setProperty('font-size', '15px');
+    
+
+
+}
+
+btncirarea.addEventListener('click',areaCirculo)
 
 
 

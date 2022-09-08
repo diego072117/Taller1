@@ -25,6 +25,8 @@ if(e.target==venmodal){
 }
 })
 
+//2
+
 let btnmodalArea=document.getElementById("abrirModal-area");
 
 //Acceder ventana modal
@@ -72,6 +74,8 @@ if(e.target==venmodal1){
 }
 })
 
+//2
+
 let btnmodal2=document.getElementById("abrirModal-rec-area");
 
 //Acceder ventana modal
@@ -93,4 +97,109 @@ if(e.target==venmodal2){
     venmodal2.style.display="none"; 
 }
 })
+
+/*----------------------------------TRIANGULO--------------------------------------*/
+
+let btnmodal3=document.getElementById("abrirModal-tri");
+
+//Acceder ventana modal
+let venmodal3=document.getElementById("ventanaModal-tri");
+
+//Acceder al botón Cerrar de la ventana modal
+let cermodal3=document.querySelector(".cerrarModal-tri");
+
+btnmodal3.addEventListener("click",()=>{
+    venmodal3.style.display="block";
+})
+
+cermodal3.addEventListener("click",()=>{
+    venmodal3.style.display="none"; 
+})
+
+window.addEventListener("click",(e)=>{
+if(e.target==venmodal3){
+    venmodal3.style.display="none"; 
+}
+})
+
+//2
+
+let btnmodal4=document.getElementById("abrirModal-tri-area");
+
+//Acceder ventana modal
+let venmodal4=document.getElementById("ventanaModal-tri1");
+
+//Acceder al botón Cerrar de la ventana modal
+let cermodal4=document.querySelector(".cerrarModal-tri-area");
+
+btnmodal4.addEventListener("click",()=>{
+    venmodal4.style.display="block";
+})
+
+cermodal4.addEventListener("click",()=>{
+    venmodal4.style.display="none"; 
+})
+
+window.addEventListener("click",(e)=>{
+if(e.target==venmodal4){
+    venmodal4.style.display="none"; 
+}
+})
+
+
+/*----------------------------------CIRCULO----------------------------------*/
+
+let btnmodal5=document.getElementById("abrirModal-cir");
+
+//Acceder ventana modal
+let venmodal5=document.getElementById("ventanaModal-cir");
+
+//Acceder al botón Cerrar de la ventana modal
+let cermodal5=document.querySelector(".cerrarModal-cir");
+
+btnmodal5.addEventListener("click",()=>{
+    venmodal5.style.display="block";
+})
+
+cermodal5.addEventListener("click",()=>{
+    venmodal5.style.display="none"; 
+})
+
+window.addEventListener("click",(e)=>{
+if(e.target==venmodal5){
+    venmodal5.style.display="none"; 
+}
+})
+
+//2
+
+let btnmodal6=document.getElementById("abrirModal-cir-area");
+
+//Acceder ventana modal
+let venmodal6=document.getElementById("ventanaModal-cir1");
+
+//Acceder al botón Cerrar de la ventana modal
+let cermodal6=document.querySelector(".cerrarModal-cir1");
+
+btnmodal6.addEventListener("click",()=>{
+    venmodal6.style.display="block";
+})
+
+cermodal6.addEventListener("click",()=>{
+    venmodal6.style.display="none"; 
+})
+
+window.addEventListener("click",(e)=>{
+if(e.target==venmodal6){
+    venmodal6.style.display="none"; 
+}
+})
+
+
+
+
+
+
+
+
 
