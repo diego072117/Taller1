@@ -156,7 +156,7 @@ function perimatroCirculo(){
     let radio = parseInt(document.getElementById('radio').value)
 
 
-    let resultado =  radio*3.14
+    let resultado =  2*3.1416*radio
 
 
     let inser = `<p>El perimetro del circulo es ${resultado}</p>`
@@ -180,7 +180,7 @@ function areaCirculo(){
     let radio = parseInt(document.getElementById('radio-area').value)
 
 
-    let resultado =  (radio*radio)*3.14
+    let resultado =  (radio*radio)*3.1416
 
 
     let inser = `<p>El area del circulo es ${resultado}</p>`
