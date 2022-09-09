@@ -284,6 +284,19 @@ section{
       padding:3rem 5%;
    }
 
+      .contenidoModal{
+      width: 40%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 15%;
+   }
+
+   .contenidoModal input{
+
+      width: 80%;
+   }
+
 }
 
 @media (max-width:991px){
@@ -294,6 +307,19 @@ section{
 
    section{
       padding:3rem 2rem;
+   }
+
+   .contenidoModal{
+      width: 40%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 15%;
+   }
+
+   .contenidoModal input{
+
+      width: 80%;
    }
 
 
@@ -334,6 +360,19 @@ section{
       text-align: center;
    }
 
+   .contenidoModal{
+      width: 50%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 15%;
+   }
+
+   .contenidoModal input{
+
+      width: 80%;
+   }
+
 }
 
 @media (max-width:450px){
@@ -345,5 +384,20 @@ section{
    .heading-title{
       font-size: 3.5rem;
    }
+
+   .contenidoModal{
+      width: 80%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 15%;
+   }
+
+   .contenidoModal input{
+
+      width: 80%;
+   }
+
+   
 
 }
