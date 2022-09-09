@@ -362,6 +362,18 @@ form button {
       width: 40%;
    }
 
+   .contenidoModal{
+      width: 40%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 10%;
+   }
+
+   .contenidoModal p{
+      font-size: 15px;
+   }
+
 }
 
 @media (max-width:991px){
@@ -377,6 +389,18 @@ form button {
    .container-ejercicios {
       margin-left: 25%;
       width: 50%;
+   }
+
+   .contenidoModal{
+      width: 50%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 10%;
+   }
+
+   .contenidoModal p{
+      font-size: 15px;
    }
    
 }
@@ -421,6 +445,18 @@ form button {
       width: 55%;
    }
 
+   .contenidoModal{
+      width: 70%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 10%;
+   }
+
+   .contenidoModal p{
+      font-size: 15px;
+   }
+
 }
 
 @media (max-width:450px){
@@ -438,6 +474,17 @@ form button {
       font-size: 4rem;
    }
 
+   .contenidoModal{
+      width: 90%;
+   }
+
+   .contenidoModal h2{
+      margin-left: 10%;
+   }
+
+   .contenidoModal p{
+      font-size: 15px;
+   }
 
 
 
