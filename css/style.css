@@ -187,7 +187,7 @@ section{
    position: relative;
    margin-top: -40px;
    width: 25%;
-   height: 550px;
+   height: 800px;
    margin-left: 37.5%;
    overflow: hidden;
    background-color: #E6E7E8;
@@ -214,7 +214,7 @@ section{
 }
 
 
-.box-input {
+.formulario__grupo .box-input {
    position: relative;
 
    width: 80%;
@@ -234,7 +234,6 @@ section{
 }
 
 
-
 .form-data label {
    font-size: 15px;
 }
@@ -249,6 +248,63 @@ form button {
    border-radius: 5px;
    box-shadow: 0px 0px 20px 1px #2f3031;
 }
+
+/*------------------------Validaciones----------------------------*/
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
 
 /*-----SELECT------*/
 
