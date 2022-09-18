@@ -1,6 +1,6 @@
 /*-------------------------------------FORM---------------------------------------*/
 
-let btnmodal7=document.getElementById("abrirModal-form");
+let btnmodal7=document.getElementById("terminos");
 
 //Acceder ventana modal
 let venmodal7=document.getElementById("ventanaModal-form");

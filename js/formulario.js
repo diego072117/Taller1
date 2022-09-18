@@ -6,9 +6,9 @@ const expresiones = {
     numDoc: /^[0-9]{5,10}/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    fecha: /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/,//fecha dia mes año
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	password: /^.{4,12}$/, // 4 a 12 digitos.
-	terminos: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
 const campos = {
@@ -16,9 +16,9 @@ const campos = {
 	numDoc: false,
 	nombre: false,
 	apellido: false,
+	fecha: false,
 	correo: false,
     password: false,
-    terminos:false
 }
 
 const validarFormulario = (e) => {
@@ -29,12 +29,14 @@ const validarFormulario = (e) => {
         case "numDoc":
 			validarCampo(expresiones.numDoc, e.target, 'numDoc');
 		break
-        console.log
         case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
         case "apellido":
 			validarCampo(expresiones.apellido, e.target, 'apellido');
+		break;
+		case "fecha":
+			validarCampo(expresiones.fecha, e.target, 'fecha');
 		break;
         case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
@@ -47,9 +49,7 @@ const validarFormulario = (e) => {
 			validarPassword2();
 		break;
 		
-		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono');
-		break;
+		
 	}
 }
 
@@ -100,8 +100,9 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	const terminos = document.getElementById('terminos'); 
+	let tipoDoc = document.getElementById('tipoDoc')
+	if(tipoDoc.selected && campos.numDoc && campos.nombre && campos.apellido && campos.fecha && campos.correo && campos.password && terminos.checked){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
@@ -117,6 +118,7 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 
+console.log(formulario)
 
 
 

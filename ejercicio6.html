@@ -18,7 +18,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/formulario.css">
 
 </head>
 
@@ -52,8 +52,13 @@
             <div class="formulario__grupo" id="grupo__tipodoc">
                <label for="">tipo documento</label>
                <div class="box-input">
-
-                  <input type="text" class="formulario__input" name="tipoDoc" id="tipoDoc" placeholder="Tipo de documento">
+ 
+                  <select class="formulario__input" >
+                     <option >Tipo de documento</option>
+                     <option id="tipoDoc" name="tipoDoc" value="1">Cedula De Ciudadania</option>
+                     <option id="tipoDoc" name="tipoDoc" value="2">Tarjeta De Identidad</option>
+                     <option id="tipoDoc" name="tipoDoc" value="3">Cedula De Extranjeria</option>
+                 </select>
                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
                </div>
                <p class="formulario__input-error">Error</p>
@@ -61,7 +66,7 @@
 
             <div class="formulario__grupo" id="grupo__numDoc">
                <label for="">Numero de documento</label>
-               <div class="box-input">
+               <div class="box-input" id="grupo__numDoc">
                   <input type="text" class="formulario__input" name="numDoc" id="numDoc" placeholder="No. documento">
                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
                </div>
@@ -71,7 +76,6 @@
             <div class="formulario__grupo" id="grupo__nombre">
                <label for="">Nombre</label>
                <div class="box-input">
-
                   <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
                </div>
@@ -88,6 +92,20 @@
                <p class="formulario__input-error">Error</p>
             </div>
 
+            
+            
+            <div class="formulario__grupo" id="grupo__fecha">
+               <label for="fecha">Fecha de nacimiento</label>
+               <div class="box-input1">
+
+                  <input type="date" class="formulario__input" name="fecha" id="fecha" >
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+               </div>
+               <p class="formulario__input-error">Error</p>
+            </div>
+
+            
+
             <div class="formulario__grupo" id="grupo__correo">
                <label for="">Correo</label>
                <div class="box-input">
@@ -99,37 +117,45 @@
                <p class="formulario__input-error">Error</p>
             </div>
 
-            <div class="formulario__grupo" id="grupo__password">
+            <div class="formulario__grupo"  id="grupo__password">
                <label for="">Password</label>
                <div class="box-input">
 
-                  <input type="text" placeholder="Password">
+                  <input type="password" class="formulario__input" name="password" id="password" placeholder="Password">
                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
                </div>
                <p class="formulario__input-error">Error</p>
             </div>
 
-            <div class="formulario__grupo" id="grupo__confirmPasswprd">
+            <div class="formulario__grupo" id="grupo__password2"">
                <label for="">Confirmar password</label>
                <div class="box-input">
 
-                  <input type="text" placeholder="Comprobar password">
+                  <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Comprobar password">
                   <i class="formulario__validacion-estado fas fa-times-circle"></i>
                </div>
                <p class="formulario__input-error">Error</p>
             </div>
 
+
             <div class="formulario__grupo" id="grupo__terminos">
-               <label for="">Terminos de uso</label>
-               <div class="box-input">
-                  <input id="abrirModal-form" class="terminos" type="checkbox" placeholder="">
-                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
-               </div>
-               <p class="formulario__input-error">Error</p>
+               <label class="formulario__label">
+                  <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                  Acepto los Terminos y Condiciones
+               </label>
+            </div>
+          
 
-            </div><br>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+               <p ><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+   
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+               <button type="submit" class="formulario__btn">Enviar</button>
+               <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
 
-            <button class="btn" id="btn">Calcular</button><br>
+      
 
          </form>
 

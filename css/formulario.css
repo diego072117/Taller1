@@ -97,89 +97,6 @@ section{
 }
 
 
-.services .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-   gap: 1.5rem;
-}
-
-.services .box-container .box{
-   padding:3rem 2rem;
-   text-align: center;
-   background: var(--main-color);
-   cursor: pointer;
-}
-
-.services .box-container .box:hover{
-   background: var(--black);
-}
-
-.services .box-container .box img{
-   height: 7rem;
-}
-
-.services .box-container .box h3{
-   color:var(--white);
-   font-size: 1.7rem;
-   padding-top: 1rem;
-}
-
-.home-about{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-}
-
-.home-about .image{
-   flex:1 1 41rem;
-}
-
-.home-about .image img{
-   width: 70%;
-   margin-left: 12%;
-}
-
-.home-about .content{
-   flex:3 1 100rem;
-   padding:3rem;
-   background: var(--light-bg);
- 
-}
-
-.home-about .content h3{
-   font-size: 3rem;
-   color:var(--black);
-}
-
-.home-about .content p{
-   font-size: 1.5rem;
-   padding:1rem 0;
-   line-height: 2;
-   color:var(--black);
-}
-
-
-
-
-.footer{
-   background: url(../images/footer-bg.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-}
-
-
-.footer .credit{
-   text-align: center;
-   padding-top: 3rem;
-   margin-top: 3rem;
-   border-top: .1rem solid var(--light-white);
-   font-size: 2rem;
-   color:var(--white);
-}
-
-.footer .credit span{
-   color:var(--main-color);
-}
 
 /*-------------------FORM---------------------*/
 
@@ -192,7 +109,7 @@ section{
    position: relative;
    margin-top: -70px;
    width: 25%;
-   height: 800px;
+   height: 1000px;
    margin-left: 37.5%;
    overflow: hidden;
    background-color: #E6E7E8;
@@ -210,7 +127,7 @@ section{
    
 }
 
-.form-data .form {
+.form-data form {
    width: 100%;
    height: 100%;
    display: flex;
@@ -240,8 +157,9 @@ section{
    width: 80%;
 }
 
-.box-input input {
-   width: 80%;
+.box-input input,
+.box-input select {
+   width: 100%;
    background-color: #c2c3c5;
    outline: none;
    border: none;
@@ -267,7 +185,7 @@ section{
 
 }
 
-.form button {
+form button {
    cursor: pointer;
    border: none;
    width: 80%;
@@ -276,6 +194,89 @@ section{
    outline: none;
    border-radius: 5px;
    box-shadow: 0px 0px 20px 1px #2f3031;
+}
+
+/*------------------------Validaciones----------------------------*/
+
+
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
 }
 
 
