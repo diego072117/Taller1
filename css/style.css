@@ -192,7 +192,7 @@ section{
    position: relative;
    margin-top: -70px;
    width: 25%;
-   height: 800px;
+   height: 500px;
    margin-left: 37.5%;
    overflow: hidden;
    background-color: #E6E7E8;
@@ -388,9 +388,14 @@ section{
       padding:3rem 5%;
    }
 
+   .heading-title{
+      font-size: 4.5rem;
+   }
    .container-ejercicios {
       margin-left: 30%;
       width: 40%;
+      margin-top: -5%;
+      height: 500px;
    }
 
    .contenidoModal{
@@ -417,9 +422,15 @@ section{
       padding:3rem 2rem;
    }
 
+   .heading-title{
+      font-size: 4.5rem;
+   }
+
    .container-ejercicios {
       margin-left: 25%;
       width: 50%;
+      height: 500px;
+      margin-top: -5%;
    }
 
    .contenidoModal{
@@ -472,8 +483,10 @@ section{
    }
 
    .container-ejercicios {
-      margin-left: 25%;
-      width: 55%;
+      margin-left: 15%;
+      width: 70%;
+      height: 500px;
+      margin-top: -8%;
    }
 
    .contenidoModal{
@@ -499,10 +512,11 @@ section{
    .container-ejercicios {
       margin-left: 16%;
       width: 70%;
+      margin-top: -8%;
    }
 
    .heading-title{
-      font-size: 4rem;
+      font-size: 3rem;
    }
 
    .contenidoModal{

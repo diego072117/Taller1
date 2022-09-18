@@ -11,7 +11,7 @@ function perimetroCuadrado(){
 
     let inser = `<p>El perimetro del cuadrado es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -35,7 +35,7 @@ function areaCuadrado(){
 
     let inser = `<p>El area del cuadrado es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -60,7 +60,7 @@ function perimetroRectangulo(){
 
     let inser = `<p>El perimetro del rectangulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -84,7 +84,7 @@ function areaRectangulo(){
 
     let inser = `<p>El area del rectangulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -111,7 +111,7 @@ function perimetroTriangulo(){
 
     let inser = `<p>El perimetro del triangulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -135,7 +135,7 @@ function areaTriangulo(){
 
     let inser = `<p>El area del triangulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -161,7 +161,7 @@ function perimatroCirculo(){
 
     let inser = `<p>El perimetro del circulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 
@@ -185,7 +185,7 @@ function areaCirculo(){
 
     let inser = `<p>El area del circulo es ${resultado}</p>`
     res.innerHTML = inser
-    res.style.setProperty('font-size', '15px');
+    res.style.setProperty('font-size', '20px');
     
 
 

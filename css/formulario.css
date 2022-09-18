@@ -389,9 +389,13 @@ form button {
       padding:3rem 5%;
    }
 
+   .heading-title{
+      font-size: 4rem;
+   }
    .container-ejercicios {
       margin-left: 30%;
       width: 40%;
+      margin-top: -5%;
    }
 
    .contenidoModal{
@@ -418,9 +422,13 @@ form button {
       padding:3rem 2rem;
    }
 
+   .heading-title{
+      font-size: 4rem;
+   }
    .container-ejercicios {
       margin-left: 25%;
       width: 50%;
+      margin-top: -5%;
    }
 
    .contenidoModal{
@@ -440,7 +448,7 @@ form button {
 @media (max-width:768px){
 
    .heading-title{
-      font-size: 4.5rem;
+      font-size: 4rem;
    }
 
    #menu-btn{
@@ -475,6 +483,7 @@ form button {
    .container-ejercicios {
       margin-left: 25%;
       width: 55%;
+      margin-top: -5%;
    }
 
    .contenidoModal{
@@ -500,14 +509,16 @@ form button {
    .container-ejercicios {
       margin-left: 16%;
       width: 70%;
+      margin-top: -10%;
    }
 
    .heading-title{
-      font-size: 4rem;
+      font-size: 3rem;
    }
 
    .contenidoModal{
       width: 90%;
+     
    }
 
    .contenidoModal h2{
