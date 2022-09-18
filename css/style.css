@@ -181,6 +181,10 @@ section{
    color:var(--main-color);
 }
 
+.si{
+   display: none;
+}
+
 /*-------------------FORM---------------------*/
 
 .heading-title{

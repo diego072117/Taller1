@@ -7,15 +7,15 @@ function temperatura(){
 
 
     if(de==1 && para==1){
-        alert(`No se pude convertir de por que son del mismo tipo`)
+        Swal.fire(`No se pude convertir de por que son del mismo tipo`)
 
     
     }
     if(de==2 && para==2){
-        alert(`No se pude convertir de por que son del mismo tipo`)
+        Swal.fire(`No se pude convertir de por que son del mismo tipo`)
     }
     if(de==3 && para==3){
-        alert(`No se pude convertir de por que son del mismo tipo`)
+        Swal.fire(`No se pude convertir de por que son del mismo tipo`)
     }
 
     
